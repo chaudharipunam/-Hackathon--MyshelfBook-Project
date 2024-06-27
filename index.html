@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShelfBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>MyShelfBook</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for books or authors...">
+        </div>
+        <div class="additional-books-container">
+            <button id="prevBtn"><i class="fa-solid fa-chevron-left" style="color: #f9fafb;" id="prev"></i></button>
+            <div id="additionalBooks"></div>
+            <button id="nextBtn"><i class="fa-solid fa-chevron-right" style="color: #efeff1;" id="next"></i></button>
+        </div>
+        <div class="books-container">
+            <div id="searchResults" class="column"><h2>Books</h2></div>
+            <div id="bookDetails" class="column"><h2>Details</h2></div>
+            <div id="favourites" class="column"><h2>Favourite Books</h2></div>
+        </div>
+    </main>
+    <div class="black">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5GeyYj22O9W11G08oFWIqHoYHAqd1fzv9OpxpEtOTbbB95RbC3hoKRsbVwPLWuS2HJUc_k4A607cBjf8Y2Vms_aMofCbpBDL22hp8Pl4&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSUidS3WEAFWCPYFTnJW-u3FHPtl6zRYQHSv_r0SDgdv4Uxw1r7ttquoknkU6DpVMz1-Um2ATrcH2hAQbQAHeC5S_eQ1KGvXcMOoTHmjwg&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTL-ZmXnv9X3sIrEhJVruFgf_0jhcFQ8rphca2jlDHcoCtpPyX9BOAsLu00VuvxJJterZdCz_wyMhN7vekhvMV0EGGFuQ8CSKbnjlavD1Iv&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9M2DYnzy9aOByhGsePgwjSrA9QhampbPcL-T5T7DcrNAcamK4oZQBljSvAA-tsZqye3zNgODDIuTp9Rt4y60Y-ZOD0SACzgWZdUFRwwx9&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTh4hS5bGwCUjysJ1yMofLGlefsGO2ZQ_Vw9YXdH8D4wmqxdkF8ARKHhKJLA-_kVdN88vRKCyTrsDfkUCGjPGE_aHIFLwvd005YolAwBYmAuBMSMEDPUj14&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSpqqf3NINBTGjVBHrOmQurhOMWz91Lod5QuJbbpszR0XwADvUrYOFwH1D5BRY5CP6UQYbadaQSp-jZQ3Io_3kcUCn5dFnpsyzFcjbkK3_Yx6zNmK5adBSK3Q&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRJevzpiGLhOKeFKTFg65x5CrgSf92kq5F8-O7bvleSTRrtiP7XlfYCBuFTU44ORit-QPMlB_tqnVCACd2h6B-PTurkZkVLgjagn1_4xXPqJohxKKJJNluCqA&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_cr9GSPBkB8ZkN1Ss3dRqn0EqKZGDh3w-sDNh1iBSd16Cj7Qw1nE59uzWvzUoRgzJBzfImUgSLBI_eXuaAEUbNygEE_h4WvV1DqBIASzsa4SnBXF8-tK07A&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRo47aOP-zorr6wSYHS32Ay1W17EA3VcjMdwhHcVViRI0zRuKRphGqQ6tdbi5D2ZB6krfYDSIzeBfJtZHyJoS2fsZt5lbDCQRNx0iWB9vJyF-wnPZRtyVQwnw&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5GeyYj22O9W11G08oFWIqHoYHAqd1fzv9OpxpEtOTbbB95RbC3hoKRsbVwPLWuS2HJUc_k4A607cBjf8Y2Vms_aMofCbpBDL22hp8Pl4&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSUidS3WEAFWCPYFTnJW-u3FHPtl6zRYQHSv_r0SDgdv4Uxw1r7ttquoknkU6DpVMz1-Um2ATrcH2hAQbQAHeC5S_eQ1KGvXcMOoTHmjwg&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTL-ZmXnv9X3sIrEhJVruFgf_0jhcFQ8rphca2jlDHcoCtpPyX9BOAsLu00VuvxJJterZdCz_wyMhN7vekhvMV0EGGFuQ8CSKbnjlavD1Iv&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9M2DYnzy9aOByhGsePgwjSrA9QhampbPcL-T5T7DcrNAcamK4oZQBljSvAA-tsZqye3zNgODDIuTp9Rt4y60Y-ZOD0SACzgWZdUFRwwx9&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTh4hS5bGwCUjysJ1yMofLGlefsGO2ZQ_Vw9YXdH8D4wmqxdkF8ARKHhKJLA-_kVdN88vRKCyTrsDfkUCGjPGE_aHIFLwvd005YolAwBYmAuBMSMEDPUj14&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSpqqf3NINBTGjVBHrOmQurhOMWz91Lod5QuJbbpszR0XwADvUrYOFwH1D5BRY5CP6UQYbadaQSp-jZQ3Io_3kcUCn5dFnpsyzFcjbkK3_Yx6zNmK5adBSK3Q&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRJevzpiGLhOKeFKTFg65x5CrgSf92kq5F8-O7bvleSTRrtiP7XlfYCBuFTU44ORit-QPMlB_tqnVCACd2h6B-PTurkZkVLgjagn1_4xXPqJohxKKJJNluCqA&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_cr9GSPBkB8ZkN1Ss3dRqn0EqKZGDh3w-sDNh1iBSd16Cj7Qw1nE59uzWvzUoRgzJBzfImUgSLBI_eXuaAEUbNygEE_h4WvV1DqBIASzsa4SnBXF8-tK07A&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRo47aOP-zorr6wSYHS32Ay1W17EA3VcjMdwhHcVViRI0zRuKRphGqQ6tdbi5D2ZB6krfYDSIzeBfJtZHyJoS2fsZt5lbDCQRNx0iWB9vJyF-wnPZRtyVQwnw&usqp=CAE" class="scroll">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQNfw-zkxNVDNoeh7afJpKFjIxXB4HQ5IBUWMa7lsw_NcRNLkc9Kt4f8fl15d6I7-7Z5CospSbV9NrlBpZ77uzDeStzQvdQ7JZkWfLe1k0&usqp=CAE" class="scroll">
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <h1>MyBookShelf</h1>
+        <div>
+            <h3>Built For Creatives</h3>
+            <p>Try MyBookShelf Pro</p>
+            <p>Find Inspiration</p>
+            <p>Get Hired</p>
+            <p>Sell Creative Assets</p>
+            <p>Sell Freelance Services</p>
+        </div>
+        <div>
+            <h3>Find Talent</h3>
+            <p>Post a Job</p>
+            <p>All Featured Freelance Designers</p>
+            <p>Graphic Designers</p>
+            <p>Photographers</p>
+            <p>Video Editors</p>
+            <p>Web Designers</p>
+            <p>Illustrators</p>
+        </div>
+        <div>
+            <h3>MyBookShelf</h3>
+            <p>About MyBookShelf</p>
+            <p>Adobe Portfolio</p>
+            <p>Download the App</p>
+            <p>Blog</p>
+            <p>Careers</p>
+            <p>Help Center</p>
+            <p>Contact Us</p>
+        </div>
+        <div>
+            <h3>Social</h3>
+            <p><i class="fa-brands fa-instagram" style="color: #f9fafa;" id="logo"></i>Instagram</p>
+            <p><i class="fa-brands fa-twitter" style="color: #f7f7f7;" id="logo"></i>Twitter</p>
+            <p><i class="fa-brands fa-pinterest" style="color: #f7f7f7;" id="logo"></i>Pinterest</p>
+            <p><i class="fa-brands fa-facebook" style="color: #fcfcfc;" id="logo"></i>Facebook</p>
+            <p><i class="fa-brands fa-linkedin" style="color: #ffffff;" id="logo"></i>LinkedIn</p>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
